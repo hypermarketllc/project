@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useQuery, useMutation, useQueryClient } from 'react-query';
 import { supabase } from '../../lib/supabase';
-import { Loader2, Plus, Power, PowerOff, Send, AlertCircle, CheckCircle } from 'lucide-react';
+import { Loader2, Plus, Power, PowerOff, Send, AlertCircle, CheckCircle, Trash2 } from 'lucide-react';
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import toast from 'react-hot-toast';
 import { testDiscordWebhook, startDiscordQueueProcessor } from '../../lib/processDiscordQueue';
+import DiscordNotificationStatus from './DiscordNotificationStatus';
 
 interface Integration {
   id: string;
@@ -24,6 +25,8 @@ const Integrations = () => {
   const queryClient = useQueryClient();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingIntegration, setEditingIntegration] = useState<Integration | null>(null);
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+  const [integrationToDelete, setIntegrationToDelete] = useState<Integration | null>(null);
 
   // Start the Discord queue processor when the component mounts
   useEffect(() => {
@@ -72,6 +75,48 @@ const Integrations = () => {
     }
   );
 
+  const deleteIntegration = useMutation(
+    async (id: string) => {
+      // First, delete any related notifications
+      await supabase
+        .from('discord_notifications')
+        .delete()
+        .eq('webhook_url', integrationToDelete?.config?.webhook_url || '');
+      
+      // Then delete the integration
+      const { error } = await supabase
+        .from('integrations')
+        .delete()
+        .eq('id', id);
+      
+      if (error) throw error;
+      return id;
+    },
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries('integrations');
+        toast.success('Integration deleted');
+        setIsDeleteModalOpen(false);
+        setIntegrationToDelete(null);
+      },
+      onError: (error: any) => {
+        toast.error('Failed to delete integration');
+        console.error('Error deleting integration:', error);
+      }
+    }
+  );
+
+  const handleDeleteClick = (integration: Integration) => {
+    setIntegrationToDelete(integration);
+    setIsDeleteModalOpen(true);
+  };
+
+  const confirmDelete = () => {
+    if (integrationToDelete) {
+      deleteIntegration.mutate(integrationToDelete.id);
+    }
+  };
+
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -109,23 +154,33 @@ const Integrations = () => {
                     <h3 className="text-lg font-medium text-gray-900">{integration.name}</h3>
                     <p className="mt-1 text-sm text-gray-500">{integration.type}</p>
                   </div>
-                  <button
-                    onClick={() => toggleIntegration.mutate({
-                      id: integration.id,
-                      is_active: !integration.is_active
-                    })}
-                    className={`inline-flex items-center p-2 rounded-full ${
-                      integration.is_active
-                        ? 'text-green-600 bg-green-100 hover:bg-green-200'
-                        : 'text-gray-400 bg-gray-100 hover:bg-gray-200'
-                    }`}
-                  >
-                    {integration.is_active ? (
-                      <Power className="h-5 w-5" />
-                    ) : (
-                      <PowerOff className="h-5 w-5" />
-                    )}
-                  </button>
+                  <div className="flex space-x-2">
+                    <button
+                      onClick={() => toggleIntegration.mutate({
+                        id: integration.id,
+                        is_active: !integration.is_active
+                      })}
+                      className={`inline-flex items-center p-2 rounded-full ${
+                        integration.is_active
+                          ? 'text-green-600 bg-green-100 hover:bg-green-200'
+                          : 'text-gray-400 bg-gray-100 hover:bg-gray-200'
+                      }`}
+                      title={integration.is_active ? "Turn off" : "Turn on"}
+                    >
+                      {integration.is_active ? (
+                        <Power className="h-5 w-5" />
+                      ) : (
+                        <PowerOff className="h-5 w-5" />
+                      )}
+                    </button>
+                    <button
+                      onClick={() => handleDeleteClick(integration)}
+                      className="inline-flex items-center p-2 rounded-full text-red-600 bg-red-100 hover:bg-red-200"
+                      title="Delete integration"
+                    >
+                      <Trash2 className="h-5 w-5" />
+                    </button>
+                  </div>
                 </div>
                 <div className="mt-4">
                   <button
@@ -203,9 +258,86 @@ const Integrations = () => {
           </div>
         </Dialog>
       </Transition>
+
+      {/* Delete Confirmation Modal */}
+      <Transition appear show={isDeleteModalOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-10" onClose={() => setIsDeleteModalOpen(false)}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black bg-opacity-25" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-medium leading-6 text-gray-900"
+                  >
+                    Delete Integration
+                  </Dialog.Title>
+                  <div className="mt-2">
+                    <p className="text-sm text-gray-500">
+                      Are you sure you want to delete the integration "{integrationToDelete?.name}"? 
+                      This action cannot be undone and will also remove all related notifications.
+                    </p>
+                  </div>
+
+                  <div className="mt-6 flex justify-end space-x-3">
+                    <button
+                      type="button"
+                      className="inline-flex justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                      onClick={() => setIsDeleteModalOpen(false)}
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                      onClick={confirmDelete}
+                      disabled={deleteIntegration.isLoading}
+                    >
+                      {deleteIntegration.isLoading ? (
+                        <>
+                          <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                          Deleting...
+                        </>
+                      ) : (
+                        'Delete'
+                      )}
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
+
+      {/* Discord Notification Status */}
+      <div className="mt-12 border-t border-gray-200 pt-8">
+        <DiscordNotificationStatus />
+      </div>
     </div>
   );
 };
+
 
 // Integration configuration form component
 const IntegrationForm = ({

@@ -85,8 +85,36 @@ const Dashboard = () => {
         }
       }
 
-      // For all users, get their own deals directly
-      console.log("Fetching deals for user:", user.id, user.email);
+      // Check if user is an owner
+      const { data: userData, error: userError } = await supabase
+        .from('users')
+        .select('id, email, position_id')
+        .eq('id', user.id)
+        .single();
+      
+      if (userError) {
+        console.error("Error fetching user data:", userError);
+        throw userError;
+      }
+      
+      // Get position details
+      const { data: positionData, error: positionError } = await supabase
+        .from('positions')
+        .select('id, name, level')
+        .eq('id', userData.position_id)
+        .single();
+      
+      if (positionError) {
+        console.error("Error fetching position data:", positionError);
+        throw positionError;
+      }
+      
+      // Determine if user is an owner
+      const positionName = positionData?.name?.toLowerCase() || 'agent';
+      const positionLevel = positionData?.level || 1;
+      const isOwner = positionName === 'owner' || positionLevel === 5;
+      
+      console.log("Dashboard - Fetching deals for user:", user.id, user.email, "isOwner:", isOwner);
       
       let query = supabase
         .from('deals')
@@ -95,8 +123,12 @@ const Dashboard = () => {
           users!deals_agent_id_fkey (full_name),
           carriers (name),
           products (name)
-        `)
-        .eq('agent_id', user.id);
+        `);
+      
+      // If not an owner, only show their own deals
+      if (!isOwner) {
+        query = query.eq('agent_id', user.id);
+      }
 
       // We already have startDate and endDate from above
 

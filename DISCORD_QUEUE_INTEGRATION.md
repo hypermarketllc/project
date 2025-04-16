@@ -6,11 +6,20 @@ This document provides instructions for setting up and using the enhanced queue-
 
 The Discord integration allows MyAgentView to send notifications to a Discord channel when certain events occur, such as:
 
-- New deals being submitted
+- New deals being submitted (with 💰 emoji and deal counter)
 - Deal status changes
 - (Future) Commission payments
 
 Notifications are sent via Discord webhooks and can be customized to include specific information about the deals. This implementation uses a queue-based system for improved reliability and error handling.
+
+### Enhanced Notification Features
+
+The Discord notifications include several enhanced features:
+
+1. **Money Emoji**: 💰 emoji appears before and after "New Deal Submitted" for visual emphasis
+2. **Deal Counter**: When an agent submits multiple deals in a day, notifications show a counter (e.g., "💰 New Deal Submitted x2 💰")
+3. **Premium Display**: Annual premium is always shown in the notification
+4. **Streamlined Information**: Product information is omitted for cleaner notifications
 
 ## How It Works
 
@@ -42,13 +51,18 @@ You have two options to set up the Discord queue system:
 1. Open the Supabase SQL Editor
 2. Copy the contents of `discord_queue_setup.sql`
 3. Paste it into the SQL Editor and run it
+4. To apply the enhanced notification features, run `enhance_discord_notifications.sql`
 
 #### Option B: Use the Migration Script
 
-Run the migration script to set up the Discord queue system:
+Run the migration scripts to set up the Discord queue system:
 
 ```bash
+# First, set up the basic queue system
 node apply-discord-queue.js
+
+# Then, apply the notification enhancements
+node apply-discord-enhancements.js
 ```
 
 ### 3. Configure the Discord Integration
@@ -106,11 +120,49 @@ You can customize the Discord notifications by editing the configuration in the 
 - **Bot Username**: The name that appears as the sender in Discord
 - **Bot Avatar URL**: The avatar image for the bot in Discord
 - **Include Agent Name**: Include the name of the agent who submitted the deal
-- **Include Premium**: Include the premium amount of the deal
 - **Include Carrier**: Include the carrier name
-- **Include Product**: Include the product name
+- **Premium**: Always included in notifications (not configurable)
+- **Deal Counter**: Automatically shows x2, x3, etc. for multiple deals by the same agent in one day
+
+### Notification Format
+
+The enhanced notifications have the following format:
+
+```
+💰 New Deal Submitted 💰
+(or 💰 New Deal Submitted x2 💰 for multiple deals)
+
+Client: [Client Name]
+Premium: $[Amount]
+Agent: [Agent Name]
+Carrier: [Carrier Name]
+```
 
 ### Notification Triggers
 
 - **Notify on New Deal**: Send a notification when a new deal is submitted
 - **Notify on Status Change**: Send a notification when a deal's status changes
+
+### Example Notification
+
+Here's an example of how the enhanced notifications appear in Discord:
+
+```
+💰 New Deal Submitted 💰
+
+Client: John Smith
+Premium: $1,200.00
+Agent: Jane Doe
+Carrier: Liberty Mutual
+```
+
+For an agent's second deal of the day:
+
+```
+💰 New Deal Submitted x2 💰
+
+Client: Sarah Johnson
+Premium: $850.00
+Agent: Jane Doe
+Carrier: Nationwide
+```

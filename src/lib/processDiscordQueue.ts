@@ -13,6 +13,9 @@ interface DiscordNotification {
   sent_at: string | null;
 }
 
+// Keep track of processed notification IDs to prevent duplicates
+const processedNotifications = new Set<string>();
+
 /**
  * Process pending Discord notifications in the queue
  * @returns Promise<{ processed: number, success: number, failed: number }>
@@ -37,10 +40,21 @@ export async function processDiscordQueue(): Promise<{ processed: number; succes
   
   let success = 0;
   let failed = 0;
+  let skipped = 0;
   
   // Process each notification
   for (const notification of notifications as DiscordNotification[]) {
+    // Skip if already processed (prevents duplicates)
+    if (processedNotifications.has(notification.id)) {
+      console.log(`Skipping already processed notification ${notification.id}`);
+      skipped++;
+      continue;
+    }
+    
     try {
+      // Add to processed set before sending
+      processedNotifications.add(notification.id);
+      
       // Send to Discord webhook
       const response = await fetch(notification.webhook_url, {
         method: 'POST',
@@ -84,7 +98,13 @@ export async function processDiscordQueue(): Promise<{ processed: number; succes
     }
   }
   
-  return { processed: notifications.length, success, failed };
+  // Limit the size of the processed notifications set to prevent memory leaks
+  if (processedNotifications.size > 1000) {
+    const oldestEntries = Array.from(processedNotifications).slice(0, 500);
+    oldestEntries.forEach(id => processedNotifications.delete(id));
+  }
+  
+  return { processed: notifications.length - skipped, success, failed };
 }
 
 /**
@@ -102,13 +122,13 @@ export function startDiscordQueueProcessor(): () => void {
     }
   });
   
-  // Set up interval to process every 30 seconds
+  // Set up interval to process every 10 seconds (faster processing)
   const intervalId = setInterval(async () => {
     const { processed, success, failed } = await processDiscordQueue();
     if (processed > 0) {
       console.log(`Processed ${processed} Discord notifications: ${success} succeeded, ${failed} failed`);
     }
-  }, 30000); // 30 seconds
+  }, 10000); // 10 seconds (was 30 seconds)
   
   // Return function to stop the processor
   return () => {
