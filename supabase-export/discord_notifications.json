@@ -1,0 +1,1000 @@
+[
+  {
+    "id": "e37462ea-d0f2-4b41-9403-b2541d250af5",
+    "deal_id": "f0ec33b8-6360-4ae4-a142-39cf54a3d08a",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "Test Notification",
+          "fields": [
+            {
+              "name": "Status",
+              "value": "If you can see this message, Discord integration is working!",
+              "inline": false
+            }
+          ],
+          "timestamp": "2025-04-16T21:28:07.141164+00:00",
+          "description": "This is a test notification from MyAgentView CRM"
+        }
+      ],
+      "content": "",
+      "username": "MyAgentView Test Bot",
+      "avatar_url": "https://i.imgur.com/4M34hi2.png"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-16T21:28:07.141164+00:00",
+    "sent_at": "2025-04-16T21:28:08.243+00:00"
+  },
+  {
+    "id": "7b3700ac-0eeb-4853-b317-040267e60c48",
+    "deal_id": "c8325f02-74cb-49bb-ab17-80d54fede266",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "New Deal Submitted",
+          "fields": [
+            {
+              "name": "Client",
+              "value": "asd asd",
+              "inline": true
+            },
+            {
+              "name": "Premium",
+              "value": "$415.00",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Liberty",
+              "inline": true
+            },
+            {
+              "name": "Product",
+              "value": "Final Expense",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-16T21:29:03.844839+00:00"
+        }
+      ],
+      "content": "",
+      "username": "MyAgentView Bot",
+      "avatar_url": "https://i.imgur.com/4M34hi2.png"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-16T21:29:03.844839+00:00",
+    "sent_at": "2025-04-16T21:29:10.466+00:00"
+  },
+  {
+    "id": "391b3884-26af-4fac-a852-c3c5379e41bb",
+    "deal_id": "9dc57e93-c0ba-43c9-b507-9b3ec7f3b969",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x8 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$478.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$39.83",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Liberty",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-16T22:07:56.578407+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-16T22:07:56.578407+00:00",
+    "sent_at": "2025-04-16T22:08:52.398+00:00"
+  },
+  {
+    "id": "ed257208-cfcb-4055-89b6-43aeaf261b6d",
+    "deal_id": "7e32ed7a-fc12-464a-89b8-fc6b34024f43",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x4 💰",
+          "fields": [
+            {
+              "name": "Client",
+              "value": "fg fg",
+              "inline": true
+            },
+            {
+              "name": "Premium",
+              "value": "$451.00",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "AIG",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-16T21:36:01.372909+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-16T21:36:01.372909+00:00",
+    "sent_at": "2025-04-16T21:36:25.573+00:00"
+  },
+  {
+    "id": "17b5a9cb-210e-4867-9469-9a715bf0880c",
+    "deal_id": "60cf60ab-6cbe-4e4e-838e-bbb7364b5031",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x5 💰",
+          "fields": [
+            {
+              "name": "Premium",
+              "value": "$4784.00",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Awesome Life Insurance Co.",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-16T21:55:48.928744+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-16T21:55:48.928744+00:00",
+    "sent_at": "2025-04-16T21:56:04.353+00:00"
+  },
+  {
+    "id": "f4a2cac4-a35a-4be9-9a1e-8d43bebfbb56",
+    "deal_id": "1178223e-2f66-46b4-8c1e-0ad74a0c79d9",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x7 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$1657.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$138.08",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "AIG",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-16T22:02:22.164651+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-16T22:02:22.164651+00:00",
+    "sent_at": "2025-04-16T22:02:47.577+00:00"
+  },
+  {
+    "id": "0d8f5092-8f33-4e81-9e0d-204c622128d2",
+    "deal_id": "309a95c7-c577-46a8-833c-7bcee2ae7ae3",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x6 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$457.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$38.08",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "AIG",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-16T22:01:07.515098+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-16T22:01:07.515098+00:00",
+    "sent_at": "2025-04-16T22:01:27.415+00:00"
+  },
+  {
+    "id": "46a8433a-3775-4708-aec4-744d78ae7ddb",
+    "deal_id": "3685a694-bd94-45bf-987f-eb5d17dda967",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x9 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$4514.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$376.17",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Awesome Life Insurance Co.",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-16T22:11:46.011844+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-16T22:11:46.011844+00:00",
+    "sent_at": "2025-04-16T22:15:02.095+00:00"
+  },
+  {
+    "id": "abc85fbf-8979-4ed0-b4ba-f85ff1bdc126",
+    "deal_id": "911b4691-aedd-4668-aae3-2f00ba9d1edd",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x2 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$1124.64",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$93.72",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "Adam Yoder",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Mutual Of Omaha",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-16T22:44:33.509585+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-16T22:44:33.509585+00:00",
+    "sent_at": "2025-04-16T22:45:14.51+00:00"
+  },
+  {
+    "id": "bde4109b-3780-4a29-b457-de7aa7f6a5f6",
+    "deal_id": "2e05410a-f079-4332-91a0-949c17cafdbf",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$1124.64",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$93.72",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "Adam Yoder",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Mutual Of Omaha",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-16T22:42:56.441866+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-16T22:42:56.441866+00:00",
+    "sent_at": "2025-04-16T22:45:14.253+00:00"
+  },
+  {
+    "id": "bc9a5920-3872-4ab1-bc80-22115643073f",
+    "deal_id": "080707b7-03a6-4eee-a5f4-c58f320d2782",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x3 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$646.80",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$53.90",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "Adam Yoder",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Liberty Bankers",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-16T22:50:54.685406+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-16T22:50:54.685406+00:00",
+    "sent_at": "2025-04-16T22:51:01.233+00:00"
+  },
+  {
+    "id": "2c3e14d7-603b-4b20-bc08-0ffbe750c431",
+    "deal_id": "108cb484-d0ca-4294-9b9d-d73055bb1623",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$4512.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$376.00",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "Admin User",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Liberty Bankers",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-17T07:38:19.593583+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-17T07:38:19.593583+00:00",
+    "sent_at": "2025-04-17T07:45:12.136+00:00"
+  },
+  {
+    "id": "224d8a5d-600a-479c-9735-a461f4f4622b",
+    "deal_id": "e499f0fe-641d-4328-bc1c-072c8bb52403",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$451.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$37.58",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "Test Test",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Gerber Life Insurance",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-17T16:55:33.611729+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-17T16:55:33.611729+00:00",
+    "sent_at": "2025-04-17T17:03:46.706+00:00"
+  },
+  {
+    "id": "e37f9927-fa4e-4d60-ae75-a493e52aa7e9",
+    "deal_id": "7cb44a15-232b-4206-a399-81ca94c25393",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$1547.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$128.92",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "AIG",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-04-22T16:49:22.622951+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-04-22T16:49:22.622951+00:00",
+    "sent_at": "2025-04-22T16:49:27.784+00:00"
+  },
+  {
+    "id": "97a2b371-d9db-4d23-806f-7a5cd614dbdf",
+    "deal_id": "0033f136-18d7-43f2-a48e-88a1abfd6f88",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$152.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$12.67",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Aetna CVS",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-05-03T17:25:39.532542+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-05-03T17:25:39.532542+00:00",
+    "sent_at": "2025-05-03T17:25:49.688+00:00"
+  },
+  {
+    "id": "fa77857d-a74e-4302-8557-90327b506bcb",
+    "deal_id": "17d5181c-b58d-495b-8963-e08b9e25b0dd",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x2 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$1487.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$123.92",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Aetna CVS",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-05-03T17:26:45.645906+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-05-03T17:26:45.645906+00:00",
+    "sent_at": "2025-05-03T17:26:54.138+00:00"
+  },
+  {
+    "id": "176517c9-0aa5-4755-9dc6-104940c7a576",
+    "deal_id": "fe3f6c6b-d956-4b34-a82c-f81300526eae",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x3 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$124.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$10.33",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Aetna CVS",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-05-03T17:32:18.005508+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-05-03T17:32:18.005508+00:00",
+    "sent_at": "2025-05-03T17:32:32.25+00:00"
+  },
+  {
+    "id": "70b061ca-0df6-439e-8fe1-89c48a67999c",
+    "deal_id": "9cdbbcaa-0deb-477c-8bf8-348ad35281e1",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x4 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$124.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$10.33",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "AIG",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-05-03T17:34:15.026061+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-05-03T17:34:15.026061+00:00",
+    "sent_at": "2025-05-03T17:34:38.993+00:00"
+  },
+  {
+    "id": "bcd729d0-913e-40d0-bc2c-8d8b9f101a57",
+    "deal_id": "ad2cd7be-3437-4d35-912b-e5bece5d91d6",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x5 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$154.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$12.83",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Awesome Life Insurance Co.",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-05-03T17:35:25.02024+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-05-03T17:35:25.02024+00:00",
+    "sent_at": "2025-05-03T17:36:15.639+00:00"
+  },
+  {
+    "id": "7f14487d-432b-42aa-a83c-f44d68596a96",
+    "deal_id": "e17c4bd3-8225-4e99-a71f-c9924a1d2687",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x6 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$45.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$3.75",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "American Coverage Center",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "AIG",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-05-03T17:37:51.900006+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-05-03T17:37:51.900006+00:00",
+    "sent_at": "2025-05-03T17:38:01.183+00:00"
+  },
+  {
+    "id": "1df4f4e6-1430-4bcf-820c-ebca1794251a",
+    "deal_id": "976d495c-7a5f-45dc-969f-e4dffe97bdca",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x2 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$1541.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$128.42",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "Admin User",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Liberty",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-05-03T19:55:49.050437+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-05-03T19:55:49.050437+00:00",
+    "sent_at": "2025-05-03T20:39:31.817+00:00"
+  },
+  {
+    "id": "d708d438-aa0f-47da-9d13-6dc1956ae317",
+    "deal_id": "dd7ac6b8-be42-4cf1-87d2-356d7cacffd5",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$1241.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$103.42",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "Admin User",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Aetna CVS",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-05-03T19:23:34.818439+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-05-03T19:23:34.818439+00:00",
+    "sent_at": "2025-05-03T20:39:32.513+00:00"
+  },
+  {
+    "id": "1437de5e-cbde-4334-b9c2-7d9b556f4918",
+    "deal_id": "8da2c393-4d97-400b-a3df-4bc55ce129ce",
+    "message": {
+      "embeds": [
+        {
+          "color": 5814783,
+          "title": "💰 New Deal Submitted x3 💰",
+          "fields": [
+            {
+              "name": "Annual Premium",
+              "value": "$1200.00",
+              "inline": true
+            },
+            {
+              "name": "Monthly Premium",
+              "value": "$100.00",
+              "inline": true
+            },
+            {
+              "name": "Agent",
+              "value": "Admin User",
+              "inline": true
+            },
+            {
+              "name": "Carrier",
+              "value": "Aetna CVS",
+              "inline": true
+            }
+          ],
+          "timestamp": "2025-05-03T19:57:23.706304+00:00"
+        }
+      ],
+      "content": "",
+      "username": "ACC Closes Bot",
+      "avatar_url": "https://i.imgur.com/IVYRHem.jpeg"
+    },
+    "webhook_url": "https://discord.com/api/webhooks/1354706831855059047/Atn9yvZaJRmrCy_nlreh2H_csEk1_oiq7FdfwhITFMEsdxjR9Z8DFyHtCCuwHub7HqT3",
+    "sent": true,
+    "error": null,
+    "retry_count": 0,
+    "created_at": "2025-05-03T19:57:23.706304+00:00",
+    "sent_at": "2025-05-03T20:39:33.209+00:00"
+  }
+]

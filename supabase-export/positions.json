@@ -1,0 +1,42 @@
+[
+  {
+    "id": "cc8e8626-9bc9-430f-8d5a-1c249a137ac5",
+    "name": "Admin",
+    "level": 4,
+    "description": "Administrator with full management access",
+    "created_at": "2025-04-16T14:40:48.468137+00:00",
+    "updated_at": "2025-04-16T14:40:48.468137+00:00"
+  },
+  {
+    "id": "ec2cfd8f-024d-4b5c-b23d-fd26d951f1bb",
+    "name": "Manager",
+    "level": 3,
+    "description": "Team manager with limited management access",
+    "created_at": "2025-04-16T14:40:48.468137+00:00",
+    "updated_at": "2025-04-16T14:40:48.468137+00:00"
+  },
+  {
+    "id": "1f1d71c2-beec-43cd-99b2-2048c0afbde4",
+    "name": "Senior Agent",
+    "level": 2,
+    "description": "Experienced sales agent",
+    "created_at": "2025-04-15T15:55:36.205892+00:00",
+    "updated_at": "2025-04-15T15:55:36.205892+00:00"
+  },
+  {
+    "id": "599470e2-3803-41a2-a792-82911e60c2f4",
+    "name": "Agent",
+    "level": 1,
+    "description": "Agent who closes the deal",
+    "created_at": "2025-04-16T14:40:48.468137+00:00",
+    "updated_at": "2025-04-16T14:40:48.468137+00:00"
+  },
+  {
+    "id": "8395f610-6c95-4cd5-b778-ee6825ac78d1",
+    "name": "Owner",
+    "level": 2,
+    "description": "Agency owner",
+    "created_at": "2025-04-16T14:31:56.932235+00:00",
+    "updated_at": "2025-04-16T14:31:56.932235+00:00"
+  }
+]

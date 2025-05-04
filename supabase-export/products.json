@@ -1,0 +1,122 @@
+[
+  {
+    "id": "2ab6114b-bc07-491f-ad42-f3a4b9333428",
+    "carrier_id": "861ba0a5-aa80-4f3f-b405-914e16ce4967",
+    "name": "Term 20"
+  },
+  {
+    "id": "d0c2d5b4-0624-4635-808e-383d72e3daa4",
+    "carrier_id": "22222222-2222-2222-2222-222222222222",
+    "name": "Universal Life"
+  },
+  {
+    "id": "0cbb38da-15d7-4c38-8eb2-d10d8346ed19",
+    "carrier_id": "33333333-3333-3333-3333-333333333333",
+    "name": "Variable Life"
+  },
+  {
+    "id": "0915a998-3f01-4686-a197-d6f73fdf1215",
+    "carrier_id": "22222222-2222-2222-2222-222222222222",
+    "name": "Universal Life"
+  },
+  {
+    "id": "96a8520d-3c61-4f40-8fda-518dfa379d22",
+    "carrier_id": "33333333-3333-3333-3333-333333333333",
+    "name": "Variable Life"
+  },
+  {
+    "id": "7c0d9eed-9cc7-4515-8a1b-f03924cb9920",
+    "carrier_id": "22222222-2222-2222-2222-222222222222",
+    "name": "Universal Life"
+  },
+  {
+    "id": "fa5a519f-4816-40eb-b7d7-cdf9b47107da",
+    "carrier_id": "33333333-3333-3333-3333-333333333333",
+    "name": "Variable Life"
+  },
+  {
+    "id": "1a6048e7-88dd-45fc-acd9-ec913962a9d5",
+    "carrier_id": "22222222-2222-2222-2222-222222222222",
+    "name": "Universal Life"
+  },
+  {
+    "id": "e12c43b7-bc33-4e4a-9e6d-2218e68334d1",
+    "carrier_id": "33333333-3333-3333-3333-333333333333",
+    "name": "Variable Life"
+  },
+  {
+    "id": "c53c36ba-01bd-4351-8985-ac13e61293b0",
+    "carrier_id": "470f5d5e-71d1-4257-81cd-d2b58820659b",
+    "name": "Final Expense"
+  },
+  {
+    "id": "54eb601c-db1f-4840-b86c-7c2446fc8baf",
+    "carrier_id": "ead5cf19-7a98-445c-8df6-f263842d6994",
+    "name": "Flex 4 Life - Paid Up At Age 100"
+  },
+  {
+    "id": "67380941-9ba7-40b7-9090-3eca78bafe74",
+    "carrier_id": "ead5cf19-7a98-445c-8df6-f263842d6994",
+    "name": "Flex 4 Life - Paid Up In 10 Years"
+  },
+  {
+    "id": "4e1ae094-98d6-49ed-a121-6b4013fadbe2",
+    "carrier_id": "ead5cf19-7a98-445c-8df6-f263842d6994",
+    "name": "Modified WL"
+  },
+  {
+    "id": "f783cdf9-b39c-490a-8fa4-48cce0e8db4d",
+    "carrier_id": "ead5cf19-7a98-445c-8df6-f263842d6994",
+    "name": "SIMPL Preferred Tier 1"
+  },
+  {
+    "id": "599f1637-f2b2-487a-9a35-b0f24431f936",
+    "carrier_id": "ead5cf19-7a98-445c-8df6-f263842d6994",
+    "name": "SIMPL Preferred Tier 2"
+  },
+  {
+    "id": "3af5df91-68a4-409b-af5c-f416353fd01d",
+    "carrier_id": "ead5cf19-7a98-445c-8df6-f263842d6994",
+    "name": "SIMPL Standard Tier 1"
+  },
+  {
+    "id": "d629d56d-f2d6-4c4e-8696-d75763a96349",
+    "carrier_id": "ead5cf19-7a98-445c-8df6-f263842d6994",
+    "name": "SIMPL Standard Tier 2"
+  },
+  {
+    "id": "a67d076e-eb0a-4dde-a0d7-e12fa8c07171",
+    "carrier_id": "f249d165-ddc0-4e85-ae5d-ec765b1da337",
+    "name": "ACC Final Expense (Preferred/Standard 40 to 89)"
+  },
+  {
+    "id": "bd642a32-9b19-4f35-880e-d823538e9e7a",
+    "carrier_id": "f249d165-ddc0-4e85-ae5d-ec765b1da337",
+    "name": "CLI Proection Series FE - 45-89"
+  },
+  {
+    "id": "716ce84f-5203-43d5-bf0c-4cb5a0a60f1f",
+    "carrier_id": "f249d165-ddc0-4e85-ae5d-ec765b1da337",
+    "name": "Modified Benefit/Standard 40-75"
+  },
+  {
+    "id": "f4731d18-30e6-4e2e-b5cf-4ac447f1a037",
+    "carrier_id": "75543cb0-43c0-4de9-82b6-337c5ebd750b",
+    "name": "Simplifed Senior Life Insurance & Whole Life Insurance"
+  },
+  {
+    "id": "d96a5bf2-1213-4fde-ad25-a037864e6b5f",
+    "carrier_id": "49b3af6f-992c-47b9-a6b3-e75aa3497f81",
+    "name": "Graded Product 45-80"
+  },
+  {
+    "id": "ac418511-8856-4a47-bd44-e214786770b1",
+    "carrier_id": "49b3af6f-992c-47b9-a6b3-e75aa3497f81",
+    "name": "Level Product 45-80"
+  },
+  {
+    "id": "4aa59b2c-3b7c-42ba-a081-e61b3241905c",
+    "carrier_id": "49b3af6f-992c-47b9-a6b3-e75aa3497f81",
+    "name": "Level Product 81-85"
+  }
+]

@@ -54,6 +54,7 @@ const router = createBrowserRouter(
     </Route>
   ),
   {
+    basename: '/crm',
     future: {
       // v7_startTransition: true, // Removed due to TypeScript error
       v7_relativeSplatPath: true

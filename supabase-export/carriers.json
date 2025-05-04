@@ -1,0 +1,58 @@
+[
+  {
+    "id": "861ba0a5-aa80-4f3f-b405-914e16ce4967",
+    "name": "Awesome Life Insurance Co.",
+    "advance_rate": 0,
+    "payment_type": "advance",
+    "advance_period_months": 9
+  },
+  {
+    "id": "22222222-2222-2222-2222-222222222222",
+    "name": "MetLife",
+    "advance_rate": 0,
+    "payment_type": "advance",
+    "advance_period_months": 9
+  },
+  {
+    "id": "33333333-3333-3333-3333-333333333333",
+    "name": "AIG",
+    "advance_rate": 0,
+    "payment_type": "advance",
+    "advance_period_months": 9
+  },
+  {
+    "id": "470f5d5e-71d1-4257-81cd-d2b58820659b",
+    "name": "Liberty",
+    "advance_rate": 0.75,
+    "payment_type": "advance",
+    "advance_period_months": 9
+  },
+  {
+    "id": "ead5cf19-7a98-445c-8df6-f263842d6994",
+    "name": "Liberty Bankers",
+    "advance_rate": 0.75,
+    "payment_type": "advance",
+    "advance_period_months": 9
+  },
+  {
+    "id": "49b3af6f-992c-47b9-a6b3-e75aa3497f81",
+    "name": "Mutual Of Omaha",
+    "advance_rate": 0.8,
+    "payment_type": "advance",
+    "advance_period_months": 9
+  },
+  {
+    "id": "75543cb0-43c0-4de9-82b6-337c5ebd750b",
+    "name": "Gerber Life Insurance",
+    "advance_rate": 0.8,
+    "payment_type": "advance",
+    "advance_period_months": 9
+  },
+  {
+    "id": "f249d165-ddc0-4e85-ae5d-ec765b1da337",
+    "name": "Aetna CVS",
+    "advance_rate": 0,
+    "payment_type": "advance",
+    "advance_period_months": 9
+  }
+]
