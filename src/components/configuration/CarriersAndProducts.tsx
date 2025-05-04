@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from 'react-query';
 import { Settings, Position, Product, Carrier, CommissionSplit } from '../../types/database';
 import { supabase } from '../../lib/supabase';
@@ -268,6 +268,9 @@ const CarriersAndProducts = () => {
                           <ChevronRight className="h-5 w-5 text-gray-400 mr-2" />
                         )}
                         <span className="font-medium text-gray-900">{carrier.name}</span>
+                        <span className="ml-3 text-sm text-gray-500">
+                          Advance Rate: {carrier.advance_rate || 75}%
+                        </span>
                       </div>
                       <div className="flex items-center space-x-4">
                         <span className="text-sm text-gray-500">
@@ -295,6 +298,22 @@ const CarriersAndProducts = () => {
 
                     <Disclosure.Panel>
                       <div className="px-4 py-4 border-t border-gray-200">
+                        <div className="mb-4 bg-gray-50 p-3 rounded-md">
+                          <div className="flex flex-wrap gap-4">
+                            <div>
+                              <span className="text-sm font-medium text-gray-500">Advance Rate:</span>
+                              <span className="ml-2 text-sm text-gray-900">{carrier.advance_rate || 75}%</span>
+                            </div>
+                            <div>
+                              <span className="text-sm font-medium text-gray-500">Advance Period:</span>
+                              <span className="ml-2 text-sm text-gray-900">{carrier.advance_period_months || 9} months</span>
+                            </div>
+                            <div>
+                              <span className="text-sm font-medium text-gray-500">Payment Type:</span>
+                              <span className="ml-2 text-sm text-gray-900">{carrier.payment_type || 'advance'}</span>
+                            </div>
+                          </div>
+                        </div>
                         <div className="space-y-4">
                           {products
                             ?.filter(product => product.carrier_id === carrier.id)
@@ -550,8 +569,40 @@ const CarriersAndProducts = () => {
                           min="0"
                           max="100"
                           step="0.01"
+                          defaultValue="75"
                           className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                         />
+                      </div>
+                      <div>
+                        <label htmlFor="advance_period_months" className="block text-sm font-medium text-gray-700">
+                          Advance Period (months)
+                        </label>
+                        <input
+                          type="number"
+                          name="advance_period_months"
+                          id="advance_period_months"
+                          required
+                          min="1"
+                          max="24"
+                          step="1"
+                          defaultValue="9"
+                          className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
+                        />
+                      </div>
+                      <div>
+                        <label htmlFor="payment_type" className="block text-sm font-medium text-gray-700">
+                          Payment Type
+                        </label>
+                        <select
+                          name="payment_type"
+                          id="payment_type"
+                          required
+                          defaultValue="advance"
+                          className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
+                        >
+                          <option value="advance">Advance</option>
+                          <option value="monthly">Monthly</option>
+                        </select>
                       </div>
                     </div>
 

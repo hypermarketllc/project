@@ -12,6 +12,7 @@ import StatsGrid from './dashboard/StatsGrid';
 import DealCharts from './dashboard/DealCharts';
 import RecentDeals from './dashboard/RecentDeals';
 import DateRangeModal from './book/DateRangeModal';
+import CommissionSummary from './dashboard/CommissionSummary';
 
 const timeFrameOptions = [
   { label: 'Today', value: 'today' },
@@ -28,6 +29,10 @@ const Dashboard = () => {
   const [selectedTimeFrame, setSelectedTimeFrame] = useState('today');
   const [customDateRange, setCustomDateRange] = useState<{start: string; end: string} | null>(null);
   const [isDateRangeModalOpen, setIsDateRangeModalOpen] = useState(false);
+  const [dateRange, setDateRange] = useState<{startDate: Date | null; endDate: Date | null}>({
+    startDate: null,
+    endDate: null
+  });
 
   // Fetch current user details
   const { data: currentUser } = useQuery<Agent>(
@@ -84,6 +89,12 @@ const Dashboard = () => {
             break;
         }
       }
+      
+      // Update date range state for other components
+      setDateRange({
+        startDate: startDate || null,
+        endDate: endDate || null
+      });
 
       // Check if user is an owner
       const { data: userData, error: userError } = await supabase
@@ -226,6 +237,14 @@ const Dashboard = () => {
             referralDeals={referralDeals.length}
             averagePremium={averagePremium}
             referralRate={totalDeals > 0 ? (referralDeals.length / totalDeals) * 100 : 0}
+          />
+        </div>
+
+        <div className="mt-6">
+          <CommissionSummary
+            userId={user?.id || ''}
+            startDate={dateRange.startDate || undefined}
+            endDate={dateRange.endDate || undefined}
           />
         </div>
 
